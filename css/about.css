@@ -1,1 +1,868 @@
+/* =====================================================
+   R.R ENTERPRISES
+   ABOUT PAGE
+   ===================================================== */
 
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(7,14,20,.94),
+            rgba(7,14,20,.70),
+            rgba(7,14,20,.35)
+        ),
+
+        url("../images/bridges/bridge-04.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.about-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba(7,14,20,.85)
+        );
+
+}
+
+
+.about-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    padding-top: 100px;
+
+}
+
+
+.about-label {
+
+    color: var(--orange);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-hero h1 {
+
+    max-width: 800px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(48px, 7vw, 80px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+}
+
+
+.about-hero h1 span {
+
+    color: var(--orange);
+
+}
+
+
+.about-hero-content > p:last-child {
+
+    max-width: 620px;
+
+    margin-top: 25px;
+
+    color: #d6dde2;
+
+    font-size: 18px;
+
+}
+
+
+.about-hero-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 28px;
+    z-index: 2;
+}
+
+.about-hero-bottom .container {
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-bottom span {
+    display: block;
+    color: #b8c1c8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+/* ================= INTRODUCTION ================= */
+
+.about-introduction {
+
+    background: white;
+
+}
+
+
+.about-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 100px;
+
+}
+
+
+.about-introduction h2 {
+
+    margin-top: 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(36px, 4vw, 55px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+.about-introduction h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.about-intro-text {
+
+    padding-top: 5px;
+
+}
+
+
+.about-intro-text p {
+
+    color: var(--gray);
+
+    margin-bottom: 20px;
+
+    line-height: 1.9;
+
+}
+
+
+.about-intro-text .about-large-text {
+
+    color: var(--dark);
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* ================= STATS ================= */
+
+.about-stats {
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.stat-item {
+
+    min-height: 190px;
+
+    padding: 35px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-right: 1px solid rgba(255,255,255,.1);
+
+}
+
+
+.stat-item:last-child {
+
+    border-right: none;
+
+}
+
+
+.stat-item strong {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(35px, 4vw, 50px);
+
+    line-height: 1;
+
+    color: var(--orange);
+
+}
+
+
+.stat-item span {
+
+    margin-top: 12px;
+
+    color: #aab5bd;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* ================= OWNER ================= */
+
+.owner-section {
+
+    background: var(--light);
+
+}
+
+
+.owner-grid {
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.owner-image-placeholder {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--dark);
+    border: 1px solid #202c35;
+}
+
+.owner-image-placeholder > div {
+    padding: 30px;
+}
+
+.placeholder-symbol {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--orange);
+    border-radius: 50%;
+    color: var(--orange);
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.owner-image-placeholder p {
+    color: white;
+    font-weight: 700;
+}
+
+.owner-image-placeholder small {
+    display: block;
+    margin-top: 7px;
+    color: #7d8992;
+    font-size: 11px;
+}
+
+.owner-content h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.owner-position {
+
+    margin-top: 12px;
+
+    margin-bottom: 28px;
+
+    color: var(--orange) !important;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: 12px;
+
+}
+
+
+.owner-content > p {
+
+    color: var(--gray);
+
+    margin-bottom: 18px;
+
+    line-height: 1.9;
+
+}
+
+
+.owner-content blockquote {
+
+    margin-top: 30px;
+
+    padding: 20px 25px;
+
+    border-left: 3px solid var(--orange);
+
+    background: white;
+
+    color: var(--dark);
+
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 600;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ================= PROCESS ================= */
+
+.how-we-work {
+
+    background: white;
+
+}
+
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 55px;
+
+}
+
+
+.process-card {
+
+    padding: 35px 28px;
+
+    border-top: 2px solid var(--border);
+
+    border-right: 1px solid var(--border);
+
+    transition: .3s ease;
+
+}
+
+
+.process-card:last-child {
+
+    border-right: none;
+
+}
+
+
+.process-card:hover {
+
+    border-top-color: var(--orange);
+
+    background: var(--light);
+
+}
+
+
+.process-card > span {
+
+    color: var(--orange);
+
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+}
+
+
+.process-card h3 {
+
+    margin: 25px 0 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+
+}
+
+
+.process-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ================= REAL WORK GALLERY ================= */
+
+.real-work {
+
+    background: var(--light);
+
+}
+
+
+.about-gallery {
+
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr 1fr;
+
+    grid-auto-rows: 260px;
+
+    gap: 12px;
+
+}
+
+
+.gallery-item {
+
+    overflow: hidden;
+
+    background: #dfe3e6;
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .6s ease;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+.gallery-large {
+
+    grid-row: span 2;
+
+}
+
+
+.gallery-wide {
+
+    grid-column: span 2;
+
+}
+
+
+.gallery-note {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+}
+
+
+.gallery-note p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+}
+
+
+
+/* ================= VALUES ================= */
+
+.values-section {
+
+    background: white;
+
+}
+
+
+.values-grid-about {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    margin-top: 55px;
+
+}
+
+
+.value-about {
+
+    padding: 30px 22px;
+
+    border-right: 1px solid var(--border);
+
+}
+
+
+.value-about:last-child {
+
+    border-right: none;
+
+}
+
+
+.value-about > span {
+
+    color: var(--orange);
+
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+}
+
+
+.value-about h3 {
+
+    margin: 22px 0 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 18px;
+
+}
+
+
+.value-about p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ================= CLOSING ================= */
+
+.about-closing {
+
+    padding: 100px 0;
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.about-closing h2 {
+
+    max-width: 900px;
+
+    margin-top: 15px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+}
+
+
+.about-closing h2 span {
+
+    color: var(--orange);
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .about-intro-grid {
+
+        gap: 50px;
+
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .stat-item:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .process-card:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .values-grid-about {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .value-about:nth-child(2),
+
+    .value-about:nth-child(4) {
+
+        border-right: none;
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .about-intro-grid,
+
+    .owner-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .owner-image-placeholder {
+
+        min-height: 400px;
+
+    }
+
+
+    .about-gallery {
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-auto-rows: 220px;
+
+    }
+
+
+    .gallery-large {
+
+        grid-row: span 1;
+
+    }
+
+
+    .gallery-wide {
+
+        grid-column: span 2;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .about-hero {
+
+        min-height: 75vh;
+
+    }
+
+
+    .stats-grid,
+
+    .process-grid,
+
+    .values-grid-about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .stat-item {
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(255,255,255,.1);
+
+    }
+
+
+    .process-card,
+
+    .value-about {
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+
+    }
+
+
+    .about-gallery {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 250px;
+
+    }
+
+
+    .gallery-wide {
+
+        grid-column: span 1;
+
+    }
+
+
+    .owner-image-placeholder {
+
+        min-height: 330px;
+
+    }
+
+}
+@media (max-width: 550px) {
+
+    .about-hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .about-hero-bottom {
+        bottom: 20px;
+    }
+
+    .about-hero-bottom span {
+        font-size: 8px;
+        letter-spacing: 1.3px;
+    }
+
+}
