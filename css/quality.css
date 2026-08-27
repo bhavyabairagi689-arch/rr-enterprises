@@ -1,1 +1,439 @@
+/* =====================================================
+   R.R ENTERPRISES
+   QUALITY & SAFETY PAGE
+   ===================================================== */
 
+
+/* ================= HERO ================= */
+
+.quality-hero {
+
+    position: relative;
+
+    min-height: 67vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(54,100,125,.22),
+            transparent 35%
+        ),
+
+        #071820;
+
+    color: white;
+
+}
+
+
+.quality-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 100px 0;
+
+}
+
+
+.quality-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #91aebc;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.quality-badge span {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #8fb9c8;
+
+}
+
+
+.quality-hero h1 {
+
+    max-width: 800px;
+
+    margin-top: 25px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(55px, 8vw, 95px);
+
+    line-height: .98;
+
+    letter-spacing: -4px;
+
+}
+
+
+.quality-hero h1 span {
+
+    color: #8fb9c8;
+
+}
+
+
+.quality-hero-content > p:last-child {
+
+    max-width: 600px;
+
+    margin-top: 28px;
+
+    color: #aebdc5;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.quality-hero-line {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 3px;
+
+    background: #8fb9c8;
+
+}
+
+
+
+/* ================= VALUES ================= */
+
+.quality-values {
+
+    background: #edf3f5;
+
+}
+
+
+.quality-heading {
+
+    max-width: 700px;
+
+}
+
+
+.quality-heading h2 {
+
+    margin-top: 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+}
+
+
+.quality-heading h2 span {
+
+    color: #557f8e;
+
+}
+
+
+
+/* ================= CARDS ================= */
+
+.quality-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 1px;
+
+    margin-top: 55px;
+
+    background: #cbd8dd;
+
+    border: 1px solid #cbd8dd;
+
+}
+
+
+.quality-card {
+
+    min-width: 0;
+
+    min-height: 330px;
+
+    padding: 30px;
+
+    background: #f8fafb;
+
+    transition: .3s ease;
+
+}
+
+
+.quality-card:hover {
+
+    background: white;
+
+    transform: translateY(-5px);
+
+}
+
+
+.quality-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #b6c9d0;
+
+    color: #557f8e;
+
+}
+
+
+.quality-icon svg {
+
+    width: 26px;
+
+    height: 26px;
+
+}
+
+
+.quality-card > span {
+
+    display: block;
+
+    margin-top: 50px;
+
+    color: #7f969f;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.quality-card h3 {
+
+    margin-top: 10px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 25px;
+
+}
+
+
+.quality-card p {
+
+    margin-top: 12px;
+
+    color: #65757d;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* ================= STATEMENT ================= */
+
+.quality-statement {
+
+    padding: 110px 0;
+
+    background: #0a222c;
+
+    color: white;
+
+}
+
+
+.quality-small-label {
+
+    color: #8fb9c8;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.quality-statement h2 {
+
+    max-width: 900px;
+
+    margin-top: 18px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+}
+
+
+.quality-statement h2 span {
+
+    color: #8fb9c8;
+
+}
+
+
+.quality-statement-text {
+
+    max-width: 550px;
+
+    margin-top: 25px;
+
+    color: #aebdc5;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .quality-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .quality-hero {
+
+        min-height: 70vh;
+
+    }
+
+
+    .quality-hero-content {
+
+        padding: 80px 0;
+
+    }
+
+
+    .quality-hero h1 {
+
+        font-size: clamp(48px, 12vw, 65px);
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .quality-hero-content > p:last-child {
+
+        font-size: 15px;
+
+    }
+
+
+    .quality-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .quality-card {
+
+        min-height: 280px;
+
+    }
+
+
+    .quality-card > span {
+
+        margin-top: 35px;
+
+    }
+
+
+    .quality-statement {
+
+        padding: 75px 0;
+
+    }
+
+
+    .quality-statement h2 {
+
+        font-size: clamp(40px, 10vw, 55px);
+
+        letter-spacing: -2px;
+
+    }
+
+}
