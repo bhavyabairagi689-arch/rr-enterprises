@@ -1,1 +1,609 @@
+/* =====================================================
+   R.R ENTERPRISES
+   PROJECTS PAGE
+   ===================================================== */
 
+
+/* ================= HERO ================= */
+
+.projects-hero {
+
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(7,14,20,.96),
+            rgba(7,14,20,.62)
+        ),
+
+        url("../images/bridges/bridge-06.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.projects-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            transparent 35%,
+            rgba(7,14,20,.92)
+        );
+
+}
+
+
+.projects-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    padding: 100px 0;
+
+}
+
+
+.projects-label {
+
+    color: var(--orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.projects-hero h1 {
+
+    max-width: 900px;
+
+    margin-top: 18px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+}
+
+
+.projects-hero h1 span {
+
+    color: var(--orange);
+
+}
+
+
+.projects-hero-content > p:last-child {
+
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #d5dde2;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.projects-hero-bottom {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 0;
+
+    right: 0;
+
+    z-index: 2;
+
+}
+
+
+.projects-hero-bottom span {
+
+    color: #aeb8bf;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* ================= PROJECT COUNT ================= */
+
+.project-count {
+
+    background: white;
+
+}
+
+
+.project-count-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,.9fr)
+        minmax(0,1.1fr);
+
+    gap: 80px;
+
+}
+
+
+.project-count h2 {
+
+    margin-top: 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(55px,7vw,90px);
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+}
+
+
+.project-count h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.project-count-text {
+
+    max-width: 650px;
+
+}
+
+
+.project-count-highlight {
+
+    color: var(--dark);
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+}
+
+
+.project-count-text p:last-child {
+
+    margin-top: 18px;
+
+    color: var(--gray);
+
+    line-height: 1.85;
+
+}
+
+
+
+/* ================= CATEGORIES ================= */
+
+.project-categories {
+
+    background: var(--light);
+
+}
+
+
+.projects-heading h2 {
+
+    margin-top: 12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(40px,5vw,65px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+}
+
+
+.projects-heading h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.project-list {
+
+    margin-top: 55px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.project-item {
+
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns: 80px minmax(0,1fr) 50px;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 30px 10px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: transparent;
+
+    transition: .3s ease;
+
+}
+
+
+.project-item:hover {
+
+    padding-left: 25px;
+
+    background: white;
+
+}
+
+
+.project-number {
+
+    color: var(--orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.project-item p {
+
+    margin: 0 0 8px;
+
+    color: #7c858b;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.project-item h3 {
+
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(24px,3vw,34px);
+
+}
+
+
+.project-mark {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--border);
+
+    color: var(--orange);
+
+    transition: .3s ease;
+
+}
+
+
+.project-item:hover .project-mark {
+
+    background: var(--orange);
+
+    color: white;
+
+    border-color: var(--orange);
+
+}
+
+
+
+/* ================= LEADERSHIP ================= */
+
+.projects-leadership {
+
+    background: white;
+
+}
+
+
+.projects-leadership-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,.9fr)
+        minmax(0,1.1fr);
+
+    gap: 90px;
+
+}
+
+
+.projects-leadership h2 {
+
+    max-width: 600px;
+
+    margin-top: 15px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(40px,5vw,65px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+}
+
+
+.projects-leadership h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.leadership-text {
+
+    max-width: 650px;
+
+}
+
+
+.leadership-text h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+}
+
+
+.leadership-position {
+
+    margin-top: 5px;
+
+    color: var(--orange);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.leadership-text > p:not(.leadership-position) {
+
+    margin-top: 22px;
+
+    color: var(--gray);
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+}
+
+
+
+/* ================= CLOSING ================= */
+
+.projects-closing {
+
+    padding: 95px 0;
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.projects-closing h2 {
+
+    margin-top: 15px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(45px,6vw,75px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+}
+
+
+.projects-closing h2 span {
+
+    color: var(--orange);
+
+}
+
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 850px) {
+
+    .project-count-grid,
+    .projects-leadership-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .projects-hero {
+
+        min-height: 72vh;
+
+    }
+
+
+    .projects-hero-content {
+
+        padding: 80px 0 100px;
+
+    }
+
+
+    .projects-hero h1 {
+
+        font-size: clamp(42px,11vw,58px);
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .projects-hero-content > p:last-child {
+
+        font-size: 15px;
+
+    }
+
+
+    .projects-hero-bottom span {
+
+        font-size: 8px;
+
+    }
+
+
+    .project-count h2 {
+
+        font-size: 65px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .project-item {
+
+        grid-template-columns:
+            40px minmax(0,1fr) 35px;
+
+        gap: 15px;
+
+        padding: 25px 5px;
+
+    }
+
+
+    .project-item:hover {
+
+        padding-left: 10px;
+
+    }
+
+
+    .project-item h3 {
+
+        font-size: 23px;
+
+    }
+
+
+    .project-mark {
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 14px;
+
+    }
+
+
+    .projects-closing {
+
+        padding: 70px 0;
+
+    }
+
+
+    .projects-closing h2 {
+
+        font-size: clamp(40px,10vw,55px);
+
+        letter-spacing: -2px;
+
+    }
+
+}
